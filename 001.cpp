@@ -3,15 +3,17 @@
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
-        vector <int> v;
         for(int i = 0; i < nums.size() - 1; i++){
             for(int j = i + 1; j < nums.size(); j++){
                 if (nums[i] + nums[j] == target){
                     return {i,j};
                 }
-            }
-            
+            }     
         }
         return {0,0};
     }
 };
+
+//my first trial for LeetCode
+//2016年10月31日 10:46
+
